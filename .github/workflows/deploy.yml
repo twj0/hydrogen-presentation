@@ -34,9 +34,8 @@ jobs:
         run: npm run build
         env:
           API_KEY: ${{ secrets.API_KEY }}
-          # 注意：如果你部署到 https://<USERNAME>.github.io/<REPO>/
-          # 请取消下面这行的注释，并将 /repo-name/ 替换为你的仓库名
-          # VITE_BASE_PATH: /repo-name/
+          # 自动获取仓库名作为 base path
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
