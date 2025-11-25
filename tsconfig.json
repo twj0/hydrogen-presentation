@@ -16,6 +16,17 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["."],
+  "include": [
+    "App.tsx",
+    "index.tsx",
+    "components",
+    "data",
+    "types.ts"
+  ],
+  "exclude": [
+    "vite.config.ts",
+    "dist",
+    "node_modules"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
