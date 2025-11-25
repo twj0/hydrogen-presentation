@@ -1,0 +1,7 @@
+{
+  "name": "Green Hydrogen Tech",
+  "description": "Deep dive into Hydrogen Production Technologies: ALK, PEM, and Future Frontiers.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
